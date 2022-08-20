@@ -1,0 +1,22 @@
+{
+  "name": "cypress-discovery",
+  "version": "1.0.0",
+  "description": "Projeto de Cypress da QA Academy",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dudaraujo/cypress-discovery.git"
+  },
+  "author": "Maria Eduarda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dudaraujo/cypress-discovery/issues"
+  },
+  "homepage": "https://github.com/dudaraujo/cypress-discovery#readme",
+  "devDependencies": {
+    "cypress": "^10.6.0"
+  }
+}
