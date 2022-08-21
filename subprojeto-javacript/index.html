@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypress Discovery</title>
+</head>
+<body>
+    <!-- <h1>Olá, <span id="nome"></h1> -->
+
+        <h1>CNH</h1>
+
+        <input name="nome" placeholder="Seu primeiro nome" />
+        <input name="idade" placeholder="Sua idade" />
+        <button type="button" onclick="verificaIdade()">Verificar idade</button>
+
+    <script type="text/javascript">
+
+        function verificaIdade() {
+            
+            var nome = document.querySelector('input[name=nome]');
+            var idade = document.querySelector('input[name=idade]');
+
+            //exibindo o valor armazenado no campo
+            console.log(nome.value);
+            console.log(idade.value)
+            
+        }
+
+        // var nome = prompt("Qual o seu nome?");
+        // var idade = parseInt(prompt("Qual a sua idade?"));
+       
+        // console.log(nome);
+        // //imprimindo o tipo da variável
+        // console.log(typeof nome);
+
+        // console.log(idade);
+        // console.log(typeof idade);
+
+     
+
+        // // acessando o id "nome" do html por meio do objeto "document"
+        // // innerText define um valor que vai ser colocado na propriedade
+        // // nesse caso, estamos colocando o valor da variável nome
+        // document.getElementById("nome").innerText = nome;
+
+    </script>
+</body>
+</html>
