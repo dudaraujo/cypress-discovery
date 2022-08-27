@@ -1,2 +1,31 @@
-INTERFACE DE LINHA COMANDO COM HYPER E GITBASH
- - Baixar Git Bash e baixar o Hyper
+Método e conteúdo são a mesma coisa. Porém, no JS é mais comum
+chamar de função ;) 
+
+
+DEV TOOLS
+
+- Sources: Mostra todos os arquivos que foram carregados para renderizar a página
+- Network - Mostra todos os downloads
+
+To do JS que roda em aplicação web, é executado localmente no seu navegador
+
+FAZENDO O JS RODAR EM UM SERVER HTTP EM VEZ DE NO NOSSO BROWSER
+- Abrir CMD como admin
+- npm install http-server -g
+- O -g quer dizer para instalarmos global na máquina
+- Entrar na pasta do projeto pelo CMD 
+- http-server
+- Esse comando vai ativar o software nede que baixamos e vai transformar a minha pasta atual em um servidor web localmente
+- No navegador, entrar em localhost: numero da porta
+- Ctrl C para parar o server
+
+RODANDO O JS NO BACKEND UTILIZANDO A PLATAFORMA NODE JS
+Criando API REST
+- Na pasta do projeto digitar npm init e fazer as configs
+- Baixar o EXPRESS (Framework para criar um servidor para rodar no backend (api rest))
+- npm install express na pasta do projeto
+- Colar código de get started do express em um arquivo de server
+- Baixar o Thunder Cliente (Postman com Insominia embutido no vscode)
+Extensão do vscode para trabalhar com teste e requisições, e consumir API's rest
+diretamente no vscode
+- npx nodemon server.js para quando subirmos o servidor ele recarregar sozinho a cada alteração
