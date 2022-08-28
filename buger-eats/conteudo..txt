@@ -29,3 +29,23 @@ Criando API REST
 Extensão do vscode para trabalhar com teste e requisições, e consumir API's rest
 diretamente no vscode
 - npx nodemon server.js para quando subirmos o servidor ele recarregar sozinho a cada alteração
+
+QUAL A MELHOR OPÇÃO NA HORA DE SELECIONAR O COMPONENTE DO CÓDIGO 
+- Utilizar o Se
+lector Playground não é uma boa abordagem pois ele pega conteúdos estáticos
+- A melhor opção é sempre procurar o elemento que q contenha ID
+e então, ir buscando os elemendos que estão dentro dele
+- Isso garantirá uma maior acertividade na hora de validar textos, por exemplo. 
+Exemplo: #page-home main h1 -> estou dizendo para buscar um item h1 que está dentro de main e dentro 
+de um id chamado page-home
+- elementos como esse: a[href="/deliver"] são até melhores que ID's 
+
+
+HTML
+- <span> recebe um ícone dentro do botão
+- <a> ancora, tem o evento de clique
+- quando buscamos ID, usamos #
+- quando buscamps classes, usamos . 
+
+CYPRESS
+- A função contains nos permite juntar um localizador CSS com um texto.
