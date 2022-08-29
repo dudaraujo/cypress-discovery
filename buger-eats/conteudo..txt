@@ -46,6 +46,22 @@ HTML
 - <a> ancora, tem o evento de clique
 - quando buscamos ID, usamos #
 - quando buscamps classes, usamos . 
+- display: none é uma propriedade do CSS que faz com que o item fique invisível. 
+- accept: quando estamos usando localizadores do html e utilzamso o accept podemos utilizar da seguinte forma:
+localizador normal: input[accept="image/*"]
+pedindo para encontrar um item que comece com image: input[accept^="image"]
+pedindo para encontrar um item que termine com /*: input[accept$="/*"]
+pedidno para encontrar um item que contém o texto image: input[accept*="image"]
 
 CYPRESS
 - A função contains nos permite juntar um localizador CSS com um texto.
+
+- O arquivo Fixtures é onde guardamos a massa de teste estática no projeto
+
+- Qualquer código que eu colocar dentro de e2e.js será executado antes de qualquer teste automatizado
+
+FAZER UPLOAD DE ARQUIVOS USANDO O CYPRESS
+- npm install cypress-file-upload --save-dev
+- importar dentro de e2e.js com import 'cypress-file-upload'
+
+-
