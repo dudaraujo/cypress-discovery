@@ -9,6 +9,7 @@ function listaVingadores() {
     //Limpando o valor da lista toda vez que o botão é clicado
     ul.innerHTML = "";
 
+
     avengers.forEach(function(a) {
 
         //Montando as linhas da lista de forma dinâmica
@@ -21,8 +22,8 @@ function listaVingadores() {
         //Colocando o texto nas linhas
         li.appendChild(text);
 
-        //Colocando cada linha dentro da ul do html
+        //Colocando cada linha dentro da ul do html 
         ul.appendChild(li);
-      
+
     });
 }
