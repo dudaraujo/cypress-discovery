@@ -64,4 +64,4 @@ FAZER UPLOAD DE ARQUIVOS USANDO O CYPRESS
 - npm install cypress-file-upload --save-dev
 - importar dentro de e2e.js com import 'cypress-file-upload'
 
--
+- As classes no JS são em PascalCase

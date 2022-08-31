@@ -10,14 +10,14 @@ function listaVingadores() {
     ul.innerHTML = "";
 
 
-    avengers.forEach(function(a) {
+    avengers.forEach(function(texto) {
 
         //Montando as linhas da lista de forma dinâmica
         var li = document.createElement('li');
 
         //Montando o texto que será colocado em cada linha 
         //O texto está na variável "a" que guarda o array
-        var text = document.createTextNode(a);
+        var text = document.createTextNode(texto);
 
         //Colocando o texto nas linhas
         li.appendChild(text);
