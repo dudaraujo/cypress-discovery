@@ -65,3 +65,19 @@ FAZER UPLOAD DE ARQUIVOS USANDO O CYPRESS
 - importar dentro de e2e.js com import 'cypress-file-upload'
 
 - As classes no JS são em PascalCase
+
+    before(function() {
+        cy.log('Tudo aqui é executado uma única vez antes de todos os casos de testes')
+    })
+
+    beforeEach(function() {
+        cy.log('Tudo aqui é executado sempre antes de cada caso de teste')
+    })
+
+    after(function() {
+        cy.log('Tudo aqui é executado uma única vez depois de todos os casos de teste')
+    })
+
+    afterEach(function() {
+        cy.log('Tduo aqui é executado sempre antes de cada caso de teste')
+    })

@@ -58,5 +58,11 @@ class SigupPage {
     }
 }
 
-export default SigupPage;
+// Quando exportamos assim, temos que instanciar a classe no arquivo de cadastro
+//export default SigupPage;
+
+//Quando exportamos assim, não precisamor instanciar a class depois
+export default new SigupPage;
+
+
 

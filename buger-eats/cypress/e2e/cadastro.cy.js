@@ -1,6 +1,15 @@
-import SigupPage from '../pages/SignupPage';
+// Quando importamos assim, temos que instanciar a classe no arquivo de cadastro
+//import SigupPage from '../pages/SignupPage';
+
+//Quando exportamos assim, não precisamor instanciar a class depois
+import signup from '../pages/SignupPage';
 
 describe('cadastro', () => {
+
+    //Para eu conseguir utilziar as funções que foram instanciadas, 
+    //Eu preciso instanciar a class SigupPage 
+    //var signup = new SigupPage();
+
     it('Usuário deve se torar um deliver', () => {
        
         //Essa variável é um obejto JS nativo
@@ -21,10 +30,6 @@ describe('cadastro', () => {
             cnh: 'cnh-digital.jpg'
 
         }
-
-        //Para eu conseguir utilziar as funções que foram instanciadas, 
-        //Eu preciso instanciar a class SigupPage 
-        var signup = new SigupPage();
 
         signup.go();
         signup.fillForm(deliver);
@@ -57,7 +62,6 @@ describe('cadastro', () => {
 
         }
 
-        var signup = new SigupPage();
 
         signup.go();
         signup.fillForm(deliver);
