@@ -81,3 +81,25 @@ FAZER UPLOAD DE ARQUIVOS USANDO O CYPRESS
     afterEach(function() {
         cy.log('Tduo aqui é executado sempre antes de cada caso de teste')
     })
+
+    //Essa variável é um obejto JS nativo
+        var deliver = {
+            name: 'Maria Eduarda',
+            cpf: '00000014dd1',
+            email: 'duda@gmail.com',
+            whatsapp: '11999999999',
+            address: {
+                postalcode: '06765000',
+                street: 'Estrada São Francisco',
+                number: '1000',
+                details: 'Ap 45',
+                district: 'Parque Taboão',
+                city_state: 'Taboão da Serra/SP'
+            },
+            delivery_method: 'Moto',
+            cnh: 'cnh-digital.jpg'
+
+        }
+
+- Quando eu uso o this para declarar variáveis de contexto, eu não posso 
+usar arrow functions 
