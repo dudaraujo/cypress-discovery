@@ -1,6 +1,8 @@
 
 describe('home page', () => {
     it('app must be online', () => {
+        //Não é necessário passar o viewport e visit pois já foi colocado
+        // no cypress.config
         cy.viewport(1440, 900)
         cy.visit('https://buger-eats.vercel.app'),
         cy.get('#page-home main h1').should('have.text', 'Seja um parceiro entregador pela Buger Eats');

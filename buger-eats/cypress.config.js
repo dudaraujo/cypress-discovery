@@ -5,6 +5,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    "projectId": "i1nfds",
     "viewportWidth": 1440,
     "viewportHeight": 900,
     "baseUrl": 'https://buger-eats-qa.vercel.app'

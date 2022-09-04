@@ -54,7 +54,10 @@ class SigupPage {
     }
 
     alertMessageShouldBe(expetedMessage) {
-        cy.get('.alert-error').should('have.text', expetedMessage)
+        //cy.get('.alert-error').should('have.text', expetedMessage)
+        //O contains te da a opssibilidade de combinar dois identificadores 
+        // O get só consegue achar um elemento 
+        cy.contains('.alert-error', expetedMessage).should('be.visible')
     }
 }
 

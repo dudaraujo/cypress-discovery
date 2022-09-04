@@ -103,3 +103,15 @@ FAZER UPLOAD DE ARQUIVOS USANDO O CYPRESS
 
 - Quando eu uso o this para declarar variáveis de contexto, eu não posso 
 usar arrow functions 
+
+- CRIAR MASSA DE TESTES DINAMICA 
+baixar essa biblioteca: npm install faker --save-dev
+
+- CRIAR CPF DINÂMICO
+baixar essa biblioteca: npm install gerador-validador-cpf --save-dev
+
+- Executar o cypress test run em outros navegadores 
+npx cypress run -b chrome
+npx cypress run -b edge
+
+
