@@ -4,7 +4,7 @@
 //Quando exportamos assim, não precisamor instanciar a class depois
 import signup from '../pages/SignupPage';
 
-describe('cadastro', () => {
+describe('Signup', () => {
 
     beforeEach(function() {
         //Como é um função assincrona, e preciso passar uma promessa (then)
@@ -22,8 +22,8 @@ describe('cadastro', () => {
     //Eu preciso instanciar a class SigupPage 
     //var signup = new SigupPage();
 
-    it('Usuário deve se torar um deliver', function() {
-       
+    it('User should be a deliver', function() {
+
         signup.go();
         signup.fillForm(this.deliver.signup);
         signup.submit();
@@ -33,12 +33,21 @@ describe('cadastro', () => {
 
     })
 
-    it('CPF incorreto', function() {
+    it('Invalid document', function() {
 
         signup.go();
         signup.fillForm(this.deliver.cpf_inv);
         signup.submit();
         signup.alertMessageShouldBe('Oops! CPF inválido');
+
+    })
+
+    it('Invalid mail', function() {
+
+        signup.go();
+        signup.fillForm(this.deliver.mail_inv);
+        signup.submit();
+        signup.alertMessageShouldBe('Oops! Email com formato inválido.');
 
     })
 })
